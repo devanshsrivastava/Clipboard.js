@@ -7,4 +7,4 @@ A great javascript utility project for copying text
 * Syntax is very easy and user friendly
 
 # Original Documentation
-*https://github.com/zenorocha/clipboard.js
+* https://github.com/zenorocha/clipboard.js
