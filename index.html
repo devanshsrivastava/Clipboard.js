@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clipboard</title>
+</head>
+<body>
+
+<h1>
+	WELCOME TO THE CLIPBOARD INTERFACE . LETS DO SOME COPY PASTE
+	</h1>
+<br>
+	<p>
+		Type the text and click the copy button to get things done,paste using (ctrl + v) or also you can right click and click on paste.
+	</p>
+
+	<br>
+	<input id="foo" value="Test me">
+	<button class="btn" data-clipboard-target=#foo>Copy</button>
+	
+</body>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+<script type="text/javascript">
+
+	var clipboard = new ClipboardJS('.btn');
+	clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+
+    e.clearSelection();
+});
+
+</script>
+</html>
